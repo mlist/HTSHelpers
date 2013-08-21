@@ -1,6 +1,6 @@
-\name{hts.methods-package}
-\alias{hts.methods-package}
-\alias{hts.methods}
+\name{HTSHelpers-package}
+\alias{HTSHelpers-package}
+\alias{HTSHelper}
 \docType{package}
 \title{
 helper methods and plot functions for HTS data analysis
@@ -10,7 +10,7 @@ This package includes methods for normalizing and plotting HTS data using normal
 }
 \details{
 \tabular{ll}{
-Package: \tab hts.methods\cr
+Package: \tab HTSHelpers\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
 Date: \tab 2013-08-21\cr
@@ -31,30 +31,30 @@ Malo et al. Statistical practice in high-throughput screening data analysis (Nat
 }
 \examples{ 
 #load hts.methods library
-library(hts.methods)
+library(HTSHelpers)
 
 #load toy data
 data(plates)
 
 #applying normalization strategies
-hts.normalize(plates)
+plates.norm <- hts.normalize(plates)
 
 #scatterplot across all wells, black bars correspond to plate means
-hts.scatter(plates)
+hts.scatter(plates.norm)
 
 #boxplot showing control performance
-hts.ctrl.boxplot(plates)
+hts.ctrl.boxplot(plates.norm)
 
 #per plate comparison of different normalization methods
-hts.norm.comparison(hts.normalize(plates), Plate=1)
+hts.norm.comparison(plates.norm, plate=1)
 
 #heatmap including hits
-hts.heatmap(plates, "CTB", method="SD", margin=3)
+hts.heatmap(plates.norm, "CTB", method="SD", margin=3)
 
 #heatmap using normalized data and MAD
-hts.heatmap(hts.normalize(plates), "Bscore", method="MAD", margin=3)
+hts.heatmap(plates.norm, "Bscore", method="MAD", margin=3)
 
 #hit list for export
-hts.hits(plates, "CTB", method="SD", margin=3)
+hts.hits(plates.norm, "CTB", method="SD", margin=3)
 
 }

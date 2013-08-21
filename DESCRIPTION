@@ -1,4 +1,4 @@
-Package: hts.methods
+Package: HTSHelpers
 Type: Package
 Title: helper methods and plot functions for HTS data analysis
 Version: 0.2
@@ -17,10 +17,10 @@ Depends:
     reshape,
     scales
 Collate:
-    'hts.normalize.R'
-    'hts.hits.R'
-    'hts.ctrl.boxplot.R'
-    'hts.heatmap.R'
-    'hts.norm.comparison.R'
-    'hts.scatter.R'
-    'hts.Bscore.R'
+    'Bscore.R'
+    'boxplot.R'
+    'heatmap.R'
+    'hits.R'
+    'normalize.R'
+    'normcomparison.R'
+    'scatter.R'
