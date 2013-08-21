@@ -1,0 +1,26 @@
+Package: hts.methods
+Type: Package
+Title: helper methods and plot functions for HTS data analysis
+Version: 0.2
+Date: 2013-08-21
+Author: Markus List
+Maintainer: Markus List <mlist@health.sdu.dk>
+Description: This package includes methods for normalizing and plotting HTS
+    data using normalization methods found in Malo et al. Statistical practice
+    in high-throughput screening data analysis (Nature biotechnology)
+License: GPL-3
+Depends:
+    R (> 2.14.0),
+    ggplot2,
+    gridExtra,
+    plyr,
+    reshape,
+    scales
+Collate:
+    'hts.normalize.R'
+    'hts.hits.R'
+    'hts.ctrl.boxplot.R'
+    'hts.heatmap.R'
+    'hts.norm.comparison.R'
+    'hts.scatter.R'
+    'hts.Bscore.R'
