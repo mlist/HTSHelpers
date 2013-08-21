@@ -1,6 +1,6 @@
 \name{HTSHelpers-package}
 \alias{HTSHelpers-package}
-\alias{HTSHelper}
+\alias{HTSHelpers}
 \docType{package}
 \title{
 helper methods and plot functions for HTS data analysis
@@ -30,7 +30,7 @@ Malo et al. Statistical practice in high-throughput screening data analysis (Nat
 \seealso{
 }
 \examples{ 
-#load hts.methods library
+#load HTS library
 library(HTSHelpers)
 
 #load toy data
