@@ -9,5 +9,10 @@ Installation requires the devtools package.
 #install dev tools if necessary: install.packages("devtools")
 library(devtools)
 install_github("HTSHelpers", username="mlist")
+
+library(HTSHelpers)
+
+#see package manual for code examples
+?HTSHelpers
 ```
 
